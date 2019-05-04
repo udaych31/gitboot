@@ -29,5 +29,15 @@ public class GitController {
 	public int sub(@PathVariable int a,@PathVariable int b) {
 		return calcServiceImpl.sub(a, b);
 	}
+	
+	@GetMapping("/mul/{a}/{b}")
+	public int mul(@PathVariable int a,@PathVariable int b) {
+		return calcServiceImpl.mul(a, b);
+	}
+	
+	@GetMapping("/addition/{a}/{b}")
+	public int addition(@PathVariable int a,@PathVariable int b) {
+		return calcServiceImpl.addition(a, b);
+	}
 
 }
