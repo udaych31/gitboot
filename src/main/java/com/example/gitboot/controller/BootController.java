@@ -29,4 +29,14 @@ public class BootController {
 		return bootServiceImpl.add(a, b);
 	}
 	
+	@GetMapping("/div/{a}/{b}")
+	public int div(@PathVariable int a,@PathVariable int b) {
+		return bootServiceImpl.add(a, b);
+	}
+	
+	@GetMapping("/say")
+	public String say() {
+		return "welcome to git boot";
+	}
+	
 }
