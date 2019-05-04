@@ -70,9 +70,9 @@ public class Git implements Serializable {
 	}
 
 	public void setCreatDt(String creatDt) {
-		this.creatDt = creatDt;
+		this.creatDt=creatDt;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Git [gitId=" + gitId + ", gitName=" + gitName + ", author=" + author + ", repoName=" + repoName
