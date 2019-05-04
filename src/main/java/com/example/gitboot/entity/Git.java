@@ -28,7 +28,7 @@ public class Git implements Serializable {
 	private String repoName;
 	
 	@Column
-	private Date creatDt;
+	private String creatDt;
 	
 	public Git() {
 	}
@@ -65,21 +65,20 @@ public class Git implements Serializable {
 		this.repoName = repoName;
 	}
 
-	public Date getCreatDt() {
+	public String getCreatDt() {
 		return creatDt;
 	}
 
-	public void setCreatDt(Date creatDt) {
-		this.creatDt = creatDt;
+	public void setCreatDt(String creatDt) {
+		this.creatDt=creatDt;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Git [gitId=" + gitId + ", gitName=" + gitName + ", author=" + author + ", repoName=" + repoName
 				+ ", creatDt=" + creatDt + "]";
 	}
 
-	
 
 	
 }
