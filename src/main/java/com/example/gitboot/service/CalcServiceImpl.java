@@ -6,6 +6,11 @@ import org.springframework.stereotype.Service;
 public class CalcServiceImpl implements CalcService {
 
 	@Override
+	public int mul(int a, int b) {
+		return a*b;
+	}
+	
+	@Override
 	public int sub(int a, int b) {
 		return a-b;
 	}

@@ -15,6 +15,11 @@ public class GitController {
 	@Autowired
 	private CalcServiceImpl calcServiceImpl;
 	
+	@GetMapping("/welcome")
+	public String welcome() {
+		return "welcome to git";
+	}
+	
 	@GetMapping("/addition")
 	public String addition() {
 		return "git addition";
