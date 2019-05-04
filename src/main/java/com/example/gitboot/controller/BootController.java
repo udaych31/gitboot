@@ -34,4 +34,9 @@ public class BootController {
 		return bootServiceImpl.add(a, b);
 	}
 	
+	@GetMapping("/say")
+	public String say() {
+		return "welcome to git boot";
+	}
+	
 }
